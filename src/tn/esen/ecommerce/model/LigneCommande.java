@@ -27,11 +27,11 @@ public class LigneCommande implements Serializable{
 	private double prixTotal;
 	
 	@ManyToOne
-	@JoinColumn(name="id_produit",nullable=false)
+	@JoinColumn(name="id_produit",nullable=false,updatable=false,insertable=false)
 	private Produit produit;
 	
 	@ManyToOne
-	@JoinColumn(name="id_commande",nullable=false)
+	@JoinColumn(name="id_commande",nullable=false,updatable=false,insertable=false)
 	private Commande commande;
 
 	public LigneCommandeId getId() {

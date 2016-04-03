@@ -11,7 +11,7 @@ public class JPAUTIL {
 	private static final EntityManager entityManager;
 	
 	static {
-		EntityManagerFactory em=Persistence.createEntityManagerFactory("JPAa");
+		EntityManagerFactory em=Persistence.createEntityManagerFactory("jpa-formation");
 		entityManager=em.createEntityManager();
 	}
 	
